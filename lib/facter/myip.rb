@@ -6,6 +6,6 @@ end
 
 Facter.add('myip2') do
   setcode do
-    Facter::Code::Execution.exec()
+    Facter::Core::Execution.exec()
   end
 end
