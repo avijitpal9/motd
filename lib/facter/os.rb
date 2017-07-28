@@ -1,5 +1,6 @@
 facter.add('os') do
   setcode do
-    Facter.value(:operatingsystem)
+    os=Facter.value(:operatingsystem)
+    os
   end
 end
