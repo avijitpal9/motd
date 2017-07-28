@@ -1,12 +1,14 @@
 Facter.add('myhost') do
-  confine :osfamily => 'RedHat'
+  confine :osfamily => 'RedHat1'
   setcode do
-    'Host'
+    'Host 1st'
   end
+end
 
- confine :osfamily => 'RedHat1'
+Facter.add('myhost') do
+ confine :osfamily => 'RedHat'
   setcode do
-    'Host1'
+    'Host 2nd'
   end
 
 end
